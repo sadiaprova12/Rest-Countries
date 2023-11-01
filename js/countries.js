@@ -17,7 +17,19 @@ const displayCountries = countries =>{
      /* .join(' ') reason coma na thakar jonno serial akare line thakbe*/
      container.innerHTML = countriesHTML.join(' ');
 }
+/* Option 1
+const getCountryHTML = country =>{
+    // destructuring use option1 variable declare //
+    const {name, flags} = country;
+    return `
+    <div class="country" >
+      <h2>${name.common}</h2>
+      <img src="${flags.png}">
+    </div>
+    `
+}*/
 
+/* Original */
 const getCountryHTML = country =>{
     return `
     <div class="country" >
