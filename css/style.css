@@ -1,0 +1,19 @@
+.countries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.country{
+    /* border r side line size and color*/ 
+    border: 3px solid goldenrod;
+    /* vitorer color*/
+    background-color: aquamarine;
+    /* border 4 dik side e round shape dibe */
+    border-radius: 20px;
+    /* side theke img and line chole asbe*/
+    padding: 30px;
+}
+/* flags img small size style*/
+.country img{
+    width: 200px;
+}
