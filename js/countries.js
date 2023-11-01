@@ -11,13 +11,18 @@ const displayCountries = countries =>{
       console.log(countries);
       /*variable declare line, */
       const countriesHTML = countries.map(country => getCountryHTML(country));
-      console.log(countriesHTML);
+      /* [0] deyar karon ekta kore div dekhar jonno . chaile sob gula dekhate pari */
+     // console.log(countriesHTML[0]); //
+     const container = document.getElementById('countries');
+     /* .join(' ') reason coma na thakar jonno serial akare line thakbe*/
+     container.innerHTML = countriesHTML.join(' ');
 }
 
 const getCountryHTML = country =>{
     return `
     <div>
       <h2>${country.name.common}</h2>
+      <img src="${country.flags.png}">
     </div>
     `
 }
